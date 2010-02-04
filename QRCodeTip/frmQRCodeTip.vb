@@ -3,7 +3,7 @@ Imports XDICTGRB
 Imports ThoughtWorks.QRCode.Codec
 Imports System.Runtime.InteropServices
 
-Public Class Form1
+Public Class frmQRCodeTip
   Implements XDICTGRB.IXDictGrabSink
 
   Dim i As Integer '取词的返回值，用于注册和注销取词
@@ -22,7 +22,9 @@ Public Class Form1
 
 
   Public Function QueryWord(ByVal WordString As String, ByVal lCursorX As Integer, ByVal lCursorY As Integer, ByVal SentenceString As String, ByRef lLoc As Integer, ByRef lStart As Integer) As Integer Implements XDICTGRB.IXDictGrabSink.QueryWord
-    Label1.Text = SentenceString.Trim
+    lblCodeStr.Text = SentenceString.Trim
+
+    Me.Show()
     Me.Location = New Point(lCursorX + 10, lCursorY + 10)
 
     Dim qrCodeEncoder As QRCodeEncoder = New QRCodeEncoder()
@@ -59,9 +61,9 @@ Public Class Form1
     End If
 
     Dim image As Image
-    Dim data As String = Label1.Text
+    Dim data As String = lblCodeStr.Text
     image = qrCodeEncoder.Encode(data)
-    PictureBox1.Image = image
+    picQRImage.Image = image
 
   End Function
 
@@ -83,4 +85,7 @@ Public Class Form1
     cboCorrectionLevel.SelectedIndex = 0
   End Sub
 
+  Private Sub pnlClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pnlClose.Click
+    Me.Hide()
+  End Sub
 End Class

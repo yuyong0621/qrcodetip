@@ -24,7 +24,6 @@ E:\qrcodetip\QRCodeTip\obj\Release\QRCodeTip.vbproj.GenerateResource.Cache
 E:\qrcodetip\QRCodeTip\obj\Debug\ResolveAssemblyReference.cache
 E:\qrcodetip\QRCodeTip\obj\Debug\Interop.XDICTGRB.dll
 E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.vbproj.ResolveComReference.cache
-E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.Form1.resources
 E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.Resources.resources
 E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.vbproj.GenerateResource.Cache
 E:\qrcodetip\QRCodeTip\bin\Debug\QRCodeTip.exe
@@ -35,3 +34,4 @@ E:\qrcodetip\QRCodeTip\bin\Debug\Interop.XDICTGRB.dll
 E:\qrcodetip\QRCodeTip\bin\Debug\QRCodeTip.exe.manifest
 E:\qrcodetip\QRCodeTip\bin\Debug\XdictGrb.dll
 E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.exe.manifest
+E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.frmQRCodeTip.resources
