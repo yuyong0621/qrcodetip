@@ -1,0 +1,1 @@
+Regsvr32 libs\XdictGrb.dll

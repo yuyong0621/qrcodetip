@@ -7,7 +7,7 @@ Public Class Form1
   Implements XDICTGRB.IXDictGrabSink
 
   Dim i As Integer '取词的返回值，用于注册和注销取词
-  Dim gp As GrabProxy = New GrabProxy() '取词代理对象
+  Dim gp As XDICTGRB.GrabProxy = New XDICTGRB.GrabProxy() '取词代理对象
 
   <DllImport("user32.dll")> _
   Private Shared Function SetWindowPos( _
@@ -68,12 +68,12 @@ Public Class Form1
   Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
     SetWindowPos(Me.Handle, -1, Screen.PrimaryScreen.Bounds.Width / 2, Screen.PrimaryScreen.Bounds.Height / 2, Me.Width, Me.Height, 0)
 
-    Dim XDictGrabDisableCaption As Integer = 0 '不取标题栏的文字
-    Dim XDictGrabDisableButton As Integer = 0 '不取按钮上的文字
-    Dim XDictGrabDisableMenu As Integer = 0 '不取菜单的文字
-    Dim XDictGrabOnlyEnglish As Integer = 0 '只取英文
+    Dim XDictGrabDisableCaption As Integer = 8 '不取标题栏的文字
+    Dim XDictGrabDisableButton As Integer = 4 '不取按钮上的文字
+    Dim XDictGrabDisableMenu As Integer = 2 '不取菜单的文字
+    Dim XDictGrabOnlyEnglish As Integer = 1 '只取英文
 
-    gp.GrabInterval = 5000 '指抓取时间间隔
+    gp.GrabInterval = 500 '指抓取时间间隔
     gp.GrabMode = XDictGrabModeEnum.XDictGrabMouse '设定取词的属性
     gp.GrabFlag = (XDictGrabOnlyEnglish & XDictGrabDisableMenu & XDictGrabDisableButton & XDictGrabDisableCaption)
     gp.GrabEnabled = True '是否取词的属性
