@@ -1,0 +1,14 @@
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\bin\Debug\QRCodeTip.exe
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\bin\Debug\QRCodeTip.pdb
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\bin\Debug\QRCodeTip.xml
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\bin\Debug\Interop.XDICTGRB.dll
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\obj\Debug\Interop.XDICTGRB.dll
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\obj\Debug\QRCodeTip.vbproj.ResolveComReference.cache
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\obj\Debug\QRCodeTip.Form1.resources
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\obj\Debug\QRCodeTip.Resources.resources
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\obj\Debug\QRCodeTip.vbproj.GenerateResource.Cache
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\obj\Debug\QRCodeTip.exe
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\obj\Debug\QRCodeTip.xml
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\obj\Debug\QRCodeTip.pdb
+C:\Users\810124.CFETS-3245\Desktop\QRCodeTip\QRCodeTip\bin\Debug\ThoughtWorks.QRCode.dll
