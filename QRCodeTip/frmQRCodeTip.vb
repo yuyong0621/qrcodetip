@@ -85,7 +85,4 @@ Public Class frmQRCodeTip
     cboCorrectionLevel.SelectedIndex = 0
   End Sub
 
-  Private Sub pnlClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pnlClose.Click
-    Me.Hide()
-  End Sub
 End Class

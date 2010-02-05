@@ -53,6 +53,12 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="baseFrom.Designer.vb">
+      <DependentUpon>baseFrom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="baseFrom.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmQRCodeTip.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="baseFrom.resx">
+      <DependentUpon>baseFrom.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQRCodeTip.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmQRCodeTip.vb</DependentUpon>
@@ -100,14 +110,52 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="bgImages\bl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\lbc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\lbr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\ll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\ltc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\ltr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\rbc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\rbr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\rl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\rtc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\rtr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgImages\tl.png" />
+  </ItemGroup>
+  <ItemGroup>
     <COMReference Include="XDICTGRB">
       <Guid>{7E37C9AA-9EBF-4F4C-BB07-4BC3B026B715}</Guid>
       <VersionMajor>1</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>True</Isolated>
-      <Private>True</Private>
+      <Isolated>False</Isolated>
     </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
