@@ -30,9 +30,7 @@ E:\qrcodetip\QRCodeTip\bin\Debug\QRCodeTip.pdb
 E:\qrcodetip\QRCodeTip\bin\Debug\QRCodeTip.xml
 E:\qrcodetip\QRCodeTip\bin\Debug\ThoughtWorks.QRCode.dll
 E:\qrcodetip\QRCodeTip\bin\Debug\Interop.XDICTGRB.dll
-E:\qrcodetip\QRCodeTip\bin\Debug\QRCodeTip.exe.manifest
-E:\qrcodetip\QRCodeTip\bin\Debug\XdictGrb.dll
-E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.exe.manifest
-E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.frmQRCodeTip.resources
 C:\Users\810124.CFETS-3245\Desktop\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.baseFrom.resources
 C:\Users\810124.CFETS-3245\Desktop\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.frmQRCodeTip.resources
+E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.baseFrom.resources
+E:\qrcodetip\QRCodeTip\obj\Debug\QRCodeTip.frmQRCodeTip.resources

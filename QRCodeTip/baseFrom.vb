@@ -16,12 +16,12 @@ Public Class baseFrom
   End Sub
 
   Protected Sub SetFormPosition()
-    If (Cursor.Position.X + Me.Size.Width > My.Computer.Screen.WorkingArea.Width) And _
-          (Cursor.Position.Y + Me.Size.Height > My.Computer.Screen.WorkingArea.Height) Then
+    If (Windows.Forms.Cursor.Position.X + Me.Size.Width > My.Computer.Screen.WorkingArea.Width) And _
+          (Windows.Forms.Cursor.Position.Y + Me.Size.Height > My.Computer.Screen.WorkingArea.Height) Then
       SetCornerBgImage(EnmCornerPosition.RightBottom)
-    ElseIf (Cursor.Position.X + Me.Size.Width > My.Computer.Screen.WorkingArea.Width) Then
+    ElseIf (Windows.Forms.Cursor.Position.X + Me.Size.Width > My.Computer.Screen.WorkingArea.Width) Then
       SetCornerBgImage(EnmCornerPosition.RightTop)
-    ElseIf (Cursor.Position.Y + Me.Size.Height > My.Computer.Screen.WorkingArea.Height) Then
+    ElseIf (Windows.Forms.Cursor.Position.Y + Me.Size.Height > My.Computer.Screen.WorkingArea.Height) Then
       SetCornerBgImage(EnmCornerPosition.LeftBottom)
     Else
       SetCornerBgImage(EnmCornerPosition.LeftTop)
@@ -40,25 +40,25 @@ Public Class baseFrom
         Me.pnlRightTop.BackgroundImage = My.Resources.rtr
         Me.pnlLeftBottom.BackgroundImage = My.Resources.lbr
         Me.pnlRightBottom.BackgroundImage = My.Resources.rbr
-        Me.Location = New Point(Cursor.Position.X + 10, Cursor.Position.Y + 10)
+        Me.Location = New Point(Windows.Forms.Cursor.Position.X + 10, Windows.Forms.Cursor.Position.Y + 10)
       Case EnmCornerPosition.RightTop
         Me.pnlRightTop.BackgroundImage = My.Resources.rtc
         Me.pnlLeftTop.BackgroundImage = My.Resources.ltr
         Me.pnlLeftBottom.BackgroundImage = My.Resources.lbr
         Me.pnlRightBottom.BackgroundImage = My.Resources.rbr
-        Me.Location = New Point(Cursor.Position.X - Me.Size.Width - 10, Cursor.Position.Y + 10)
+        Me.Location = New Point(Windows.Forms.Cursor.Position.X - Me.Size.Width - 10, Windows.Forms.Cursor.Position.Y + 10)
       Case EnmCornerPosition.LeftBottom
         Me.pnlLeftBottom.BackgroundImage = My.Resources.lbc
         Me.pnlLeftTop.BackgroundImage = My.Resources.ltr
         Me.pnlRightTop.BackgroundImage = My.Resources.rtr
         Me.pnlRightBottom.BackgroundImage = My.Resources.rbr
-        Me.Location = New Point(Cursor.Position.X + 10, Cursor.Position.Y - Me.Size.Height - 10)
+        Me.Location = New Point(Windows.Forms.Cursor.Position.X + 10, Windows.Forms.Cursor.Position.Y - Me.Size.Height - 10)
       Case EnmCornerPosition.RightBottom
         Me.pnlRightBottom.BackgroundImage = My.Resources.rbc
         Me.pnlLeftTop.BackgroundImage = My.Resources.ltr
         Me.pnlRightTop.BackgroundImage = My.Resources.rtr
         Me.pnlLeftBottom.BackgroundImage = My.Resources.lbr
-        Me.Location = New Point(Cursor.Position.X - Me.Size.Width - 10, Cursor.Position.Y - Me.Size.Height - 10)
+        Me.Location = New Point(Windows.Forms.Cursor.Position.X - Me.Size.Width - 10, Windows.Forms.Cursor.Position.Y - Me.Size.Height - 10)
     End Select
   End Sub
 

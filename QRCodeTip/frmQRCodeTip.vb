@@ -20,15 +20,14 @@ Public Class frmQRCodeTip
                                       ByVal wFlags As Integer) As Integer
   End Function
 
-
   Public Function QueryWord(ByVal WordString As String, ByVal lCursorX As Integer, ByVal lCursorY As Integer, ByVal SentenceString As String, ByRef lLoc As Integer, ByRef lStart As Integer) As Integer Implements XDICTGRB.IXDictGrabSink.QueryWord
-    lblCodeStr.Text = SentenceString.Trim
+    txtCodeString.Text = SentenceString.Trim
 
     Me.Show()
     Me.Location = New Point(lCursorX + 10, lCursorY + 10)
 
     Dim qrCodeEncoder As QRCodeEncoder = New QRCodeEncoder()
-    Dim encoding As String = cboEncoding.Text
+    Dim encoding As String = "Byte"
     If (encoding = "Byte") Then
       qrCodeEncoder.QRCodeEncodeMode = qrCodeEncoder.ENCODE_MODE.BYTE
     ElseIf (encoding = "AlphaNumeric") Then
@@ -37,19 +36,19 @@ Public Class frmQRCodeTip
       qrCodeEncoder.QRCodeEncodeMode = qrCodeEncoder.ENCODE_MODE.NUMERIC
     End If
     Try
-      qrCodeEncoder.QRCodeScale = CInt(txtSize.Text)
+      qrCodeEncoder.QRCodeScale = CInt(7)
     Catch ex As Exception
       MessageBox.Show("Invalid size!")
       Exit Function
     End Try
 
     Try
-      qrCodeEncoder.QRCodeVersion = Convert.ToInt16(cboVersion.Text)
+      qrCodeEncoder.QRCodeVersion = Convert.ToInt16(4)
     Catch ex As Exception
       MessageBox.Show("Invalid version !")
     End Try
 
-    Dim errorCorrect As String = cboCorrectionLevel.Text
+    Dim errorCorrect As String = "L"
     If (errorCorrect = "L") Then
       qrCodeEncoder.QRCodeErrorCorrect = qrCodeEncoder.ERROR_CORRECTION.L
     ElseIf (errorCorrect = "M") Then
@@ -61,13 +60,13 @@ Public Class frmQRCodeTip
     End If
 
     Dim image As Image
-    Dim data As String = lblCodeStr.Text
+    Dim data As String = txtCodeString.Text
     image = qrCodeEncoder.Encode(data)
     picQRImage.Image = image
 
   End Function
 
-  Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+  Private Sub frmQRCodeTip_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
     SetWindowPos(Me.Handle, -1, Screen.PrimaryScreen.Bounds.Width / 2, Screen.PrimaryScreen.Bounds.Height / 2, Me.Width, Me.Height, 0)
 
     Dim XDictGrabDisableCaption As Integer = 8 '不取标题栏的文字
@@ -81,8 +80,5 @@ Public Class frmQRCodeTip
     gp.GrabEnabled = True '是否取词的属性
     i = gp.AdviseGrab(Me) '要实现的接口
 
-    cboEncoding.SelectedIndex = 0
-    cboCorrectionLevel.SelectedIndex = 0
   End Sub
-
 End Class

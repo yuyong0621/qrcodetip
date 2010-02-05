@@ -59,11 +59,10 @@
     <Compile Include="baseFrom.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQRCodeTip.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmQRCodeTip.Designer.vb">
       <DependentUpon>frmQRCodeTip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQRCodeTip.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
